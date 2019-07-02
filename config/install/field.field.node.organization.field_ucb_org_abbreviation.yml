@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_org_abbreviation
+    - node.type.organization
+id: node.organization.field_ucb_org_abbreviation
+field_name: field_ucb_org_abbreviation
+entity_type: node
+bundle: organization
+label: Abbreviation
+description: 'Abbreviation code for this organization.  '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

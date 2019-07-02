@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_org_location_desc
+    - node.type.organization
+id: node.organization.field_ucb_org_location_desc
+field_name: field_ucb_org_location_desc
+entity_type: node
+bundle: organization
+label: 'Location Description'
+description: 'Second door on the left after you exit the elevators'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

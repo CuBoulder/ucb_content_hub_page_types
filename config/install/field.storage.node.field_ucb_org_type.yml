@@ -1,0 +1,86 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_ucb_org_type
+field_name: field_ucb_org_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: College
+      label: College
+    -
+      value: School
+      label: School
+    -
+      value: 'Academic Department'
+      label: 'Academic Department'
+    -
+      value: 'Academic Program'
+      label: 'Academic Program'
+    -
+      value: 'Academic Support'
+      label: 'Academic Support'
+    -
+      value: 'Certificate Program'
+      label: 'Certificate Program'
+    -
+      value: 'Outreach Program'
+      label: 'Outreach Program'
+    -
+      value: 'Residential Academic Program'
+      label: 'Residential Academic Program'
+    -
+      value: Center
+      label: Center
+    -
+      value: Institute
+      label: Institute
+    -
+      value: 'Service Department'
+      label: 'Service Department'
+    -
+      value: 'Resource Department'
+      label: 'Resource Department'
+    -
+      value: 'Support Department'
+      label: 'Support Department'
+    -
+      value: Performance
+      label: Performance
+    -
+      value: Events
+      label: Events
+    -
+      value: Museum
+      label: Museum
+    -
+      value: 'Research Program'
+      label: 'Research Program'
+    -
+      value: Lab
+      label: Lab
+    -
+      value: Faculty
+      label: Faculty
+    -
+      value: 'Student Group'
+      label: 'Student Group'
+    -
+      value: 'Sport Club'
+      label: 'Sport Club'
+    -
+      value: Publication
+      label: Publication
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

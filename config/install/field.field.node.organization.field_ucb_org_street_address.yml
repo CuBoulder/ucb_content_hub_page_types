@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_org_street_address
+    - node.type.organization
+id: node.organization.field_ucb_org_street_address
+field_name: field_ucb_org_street_address
+entity_type: node
+bundle: organization
+label: 'Street Address'
+description: '123 Main St, Suite 200'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

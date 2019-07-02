@@ -1,0 +1,224 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.organization.field_ucb_org_abbreviation
+    - field.field.node.organization.field_ucb_org_address_country
+    - field.field.node.organization.field_ucb_org_address_locality
+    - field.field.node.organization.field_ucb_org_address_region
+    - field.field.node.organization.field_ucb_org_ancestor_org
+    - field.field.node.organization.field_ucb_org_campus_mail_box
+    - field.field.node.organization.field_ucb_org_contact_form_url
+    - field.field.node.organization.field_ucb_org_description
+    - field.field.node.organization.field_ucb_org_directory_url
+    - field.field.node.organization.field_ucb_org_email
+    - field.field.node.organization.field_ucb_org_fax_number
+    - field.field.node.organization.field_ucb_org_id_campus_map
+    - field.field.node.organization.field_ucb_org_location_desc
+    - field.field.node.organization.field_ucb_org_parent_org
+    - field.field.node.organization.field_ucb_org_postal_code
+    - field.field.node.organization.field_ucb_org_related_org
+    - field.field.node.organization.field_ucb_org_social_contact
+    - field.field.node.organization.field_ucb_org_street_address
+    - field.field.node.organization.field_ucb_org_telephone
+    - field.field.node.organization.field_ucb_org_type
+    - field.field.node.organization.field_ucb_org_website_url
+    - node.type.organization
+  module:
+    - link
+    - options
+    - telephone
+    - text
+    - user
+id: node.organization.default
+targetEntityType: node
+bundle: organization
+mode: default
+content:
+  field_ucb_org_abbreviation:
+    weight: 101
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ucb_org_address_country:
+    weight: 112
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ucb_org_address_locality:
+    weight: 109
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ucb_org_address_region:
+    weight: 110
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ucb_org_ancestor_org:
+    weight: 121
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ucb_org_campus_mail_box:
+    weight: 106
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ucb_org_contact_form_url:
+    weight: 116
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_ucb_org_description:
+    weight: 102
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_ucb_org_directory_url:
+    weight: 117
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_ucb_org_email:
+    weight: 103
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_ucb_org_fax_number:
+    weight: 104
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_ucb_org_id_campus_map:
+    weight: 105
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ucb_org_location_desc:
+    weight: 107
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ucb_org_parent_org:
+    weight: 119
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ucb_org_postal_code:
+    weight: 111
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ucb_org_related_org:
+    weight: 120
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ucb_org_social_contact:
+    weight: 113
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_ucb_org_street_address:
+    weight: 108
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ucb_org_telephone:
+    weight: 114
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_ucb_org_type:
+    weight: 118
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_ucb_org_website_url:
+    weight: 115
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
