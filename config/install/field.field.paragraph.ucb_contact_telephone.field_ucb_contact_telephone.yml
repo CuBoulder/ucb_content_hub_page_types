@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ucb_contact_telephone
+    - paragraphs.paragraphs_type.ucb_contact_telephone
+  module:
+    - telephone
+id: paragraph.ucb_contact_telephone.field_ucb_contact_telephone
+field_name: field_ucb_contact_telephone
+entity_type: paragraph
+bundle: ucb_contact_telephone
+label: Telephone
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

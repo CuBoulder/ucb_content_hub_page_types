@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ucb_contact_url.field_ucb_contact_url
+    - paragraphs.paragraphs_type.ucb_contact_url
+  module:
+    - link
+id: paragraph.ucb_contact_url.default
+targetEntityType: paragraph
+bundle: ucb_contact_url
+mode: default
+content:
+  field_ucb_contact_url:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

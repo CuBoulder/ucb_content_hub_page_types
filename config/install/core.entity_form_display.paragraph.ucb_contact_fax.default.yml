@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ucb_contact_fax.field_ucb_contact_fax_desc
+    - field.field.paragraph.ucb_contact_fax.field_ucb_contact_fax_number
+    - paragraphs.paragraphs_type.ucb_contact_fax
+  module:
+    - telephone
+id: paragraph.ucb_contact_fax.default
+targetEntityType: paragraph
+bundle: ucb_contact_fax
+mode: default
+content:
+  field_ucb_contact_fax_desc:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ucb_contact_fax_number:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+hidden:
+  created: true
+  status: true

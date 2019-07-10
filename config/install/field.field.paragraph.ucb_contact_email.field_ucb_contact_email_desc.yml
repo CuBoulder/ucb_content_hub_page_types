@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ucb_contact_email_desc
+    - paragraphs.paragraphs_type.ucb_contact_email
+id: paragraph.ucb_contact_email.field_ucb_contact_email_desc
+field_name: field_ucb_contact_email_desc
+entity_type: paragraph
+bundle: ucb_contact_email
+label: Description
+description: 'Optional description for this email contact information.  '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_org_visibility
+    - node.type.organization
+  module:
+    - options
+id: node.organization.field_ucb_org_visibility
+field_name: field_ucb_org_visibility
+entity_type: node
+bundle: organization
+label: Visibility
+description: "Hidden - will not display by default on parent organization pages.\r\nStandard - will display on parent organization pages.\r\nPromoted - will display at the top of the list on parent organization pages.  "
+required: true
+translatable: false
+default_value:
+  -
+    value: Standard
+default_value_callback: ''
+settings: {  }
+field_type: list_string

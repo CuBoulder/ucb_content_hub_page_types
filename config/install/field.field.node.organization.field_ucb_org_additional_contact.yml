@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_org_additional_contact
+    - node.type.organization
+    - paragraphs.paragraphs_type.ucb_contact_email
+    - paragraphs.paragraphs_type.ucb_contact_fax
+    - paragraphs.paragraphs_type.ucb_contact_telephone
+    - paragraphs.paragraphs_type.ucb_contact_url
+  module:
+    - entity_reference_revisions
+id: node.organization.field_ucb_org_additional_contact
+field_name: field_ucb_org_additional_contact
+entity_type: node
+bundle: organization
+label: 'Additional Contact Points'
+description: 'Optional additional Email, Phone, Fax or URLs contact points.  '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      ucb_contact_email: ucb_contact_email
+      ucb_contact_url: ucb_contact_url
+      ucb_contact_telephone: ucb_contact_telephone
+      ucb_contact_fax: ucb_contact_fax
+    target_bundles_drag_drop:
+      ucb_contact_email:
+        enabled: true
+        weight: -9
+      ucb_contact_url:
+        enabled: true
+        weight: -8
+      ucb_contact_telephone:
+        enabled: true
+        weight: -7
+      ucb_contact_fax:
+        enabled: true
+        weight: -6
+field_type: entity_reference_revisions

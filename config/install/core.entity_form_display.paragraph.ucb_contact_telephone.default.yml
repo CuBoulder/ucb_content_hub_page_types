@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ucb_contact_telephone.field_ucb_contact_telephone
+    - field.field.paragraph.ucb_contact_telephone.field_ucb_contact_telephone_desc
+    - paragraphs.paragraphs_type.ucb_contact_telephone
+  module:
+    - telephone
+id: paragraph.ucb_contact_telephone.default
+targetEntityType: paragraph
+bundle: ucb_contact_telephone
+mode: default
+content:
+  field_ucb_contact_telephone:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_ucb_contact_telephone_desc:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

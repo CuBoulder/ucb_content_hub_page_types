@@ -3,6 +3,8 @@ status: true
 dependencies:
   config:
     - field.field.node.organization.field_ucb_org_abbreviation
+    - field.field.node.organization.field_ucb_org_additional_contact
+    - field.field.node.organization.field_ucb_org_additional_links
     - field.field.node.organization.field_ucb_org_address_country
     - field.field.node.organization.field_ucb_org_address_locality
     - field.field.node.organization.field_ucb_org_address_region
@@ -22,9 +24,11 @@ dependencies:
     - field.field.node.organization.field_ucb_org_street_address
     - field.field.node.organization.field_ucb_org_telephone
     - field.field.node.organization.field_ucb_org_type
+    - field.field.node.organization.field_ucb_org_visibility
     - field.field.node.organization.field_ucb_org_website_url
     - node.type.organization
   module:
+    - entity_reference_revisions
     - link
     - options
     - telephone
@@ -42,6 +46,27 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_ucb_org_additional_contact:
+    type: entity_reference_revisions_entity_view
+    weight: 124
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_ucb_org_additional_links:
+    weight: 122
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_ucb_org_address_country:
     weight: 112
@@ -199,6 +224,13 @@ content:
     region: content
   field_ucb_org_type:
     weight: 118
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_ucb_org_visibility:
+    weight: 123
     label: hidden
     settings: {  }
     third_party_settings: {  }

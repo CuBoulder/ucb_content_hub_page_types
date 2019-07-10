@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ucb_contact_url
+    - paragraphs.paragraphs_type.ucb_contact_url
+  module:
+    - link
+id: paragraph.ucb_contact_url.field_ucb_contact_url
+field_name: field_ucb_contact_url
+entity_type: paragraph
+bundle: ucb_contact_url
+label: URL
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

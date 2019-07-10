@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ucb_contact_fax_desc
+    - paragraphs.paragraphs_type.ucb_contact_fax
+id: paragraph.ucb_contact_fax.field_ucb_contact_fax_desc
+field_name: field_ucb_contact_fax_desc
+entity_type: paragraph
+bundle: ucb_contact_fax
+label: Description
+description: 'Optional description for this Fax Number.  '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
