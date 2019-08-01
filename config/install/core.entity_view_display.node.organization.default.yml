@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.organization.field_ucb_org_address_region
     - field.field.node.organization.field_ucb_org_ancestor_org
     - field.field.node.organization.field_ucb_org_campus_mail_box
+    - field.field.node.organization.field_ucb_org_children_org
     - field.field.node.organization.field_ucb_org_contact_form_url
     - field.field.node.organization.field_ucb_org_description
     - field.field.node.organization.field_ucb_org_directory_url
@@ -40,7 +41,7 @@ bundle: organization
 mode: default
 content:
   field_ucb_org_abbreviation:
-    weight: 101
+    weight: 1
     label: hidden
     settings:
       link_to_entity: false
@@ -49,7 +50,7 @@ content:
     region: content
   field_ucb_org_additional_contact:
     type: entity_reference_revisions_entity_view
-    weight: 124
+    weight: 22
     label: hidden
     settings:
       view_mode: default
@@ -57,7 +58,7 @@ content:
     third_party_settings: {  }
     region: content
   field_ucb_org_additional_links:
-    weight: 122
+    weight: 21
     label: hidden
     settings:
       trim_length: 80
@@ -69,7 +70,7 @@ content:
     type: link
     region: content
   field_ucb_org_address_country:
-    weight: 112
+    weight: 12
     label: hidden
     settings:
       link_to_entity: false
@@ -77,7 +78,7 @@ content:
     type: string
     region: content
   field_ucb_org_address_locality:
-    weight: 109
+    weight: 9
     label: hidden
     settings:
       link_to_entity: false
@@ -85,7 +86,7 @@ content:
     type: string
     region: content
   field_ucb_org_address_region:
-    weight: 110
+    weight: 10
     label: hidden
     settings:
       link_to_entity: false
@@ -93,7 +94,7 @@ content:
     type: string
     region: content
   field_ucb_org_ancestor_org:
-    weight: 121
+    weight: 20
     label: hidden
     settings:
       link: true
@@ -101,15 +102,24 @@ content:
     type: entity_reference_label
     region: content
   field_ucb_org_campus_mail_box:
-    weight: 106
+    weight: 6
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
+  field_ucb_org_children_org:
+    weight: 23
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   field_ucb_org_contact_form_url:
-    weight: 116
+    weight: 16
     label: hidden
     settings:
       trim_length: 80
@@ -121,14 +131,14 @@ content:
     type: link
     region: content
   field_ucb_org_description:
-    weight: 102
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_ucb_org_directory_url:
-    weight: 117
+    weight: 17
     label: hidden
     settings:
       trim_length: 80
@@ -140,14 +150,14 @@ content:
     type: link
     region: content
   field_ucb_org_email:
-    weight: 103
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_ucb_org_fax_number:
-    weight: 104
+    weight: 4
     label: hidden
     settings:
       title: ''
@@ -155,7 +165,7 @@ content:
     type: telephone_link
     region: content
   field_ucb_org_id_campus_map:
-    weight: 105
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false
@@ -163,23 +173,15 @@ content:
     type: string
     region: content
   field_ucb_org_location_desc:
-    weight: 107
+    weight: 7
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_ucb_org_parent_org:
-    weight: 119
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_ucb_org_postal_code:
-    weight: 111
+    weight: 11
     label: hidden
     settings:
       link_to_entity: false
@@ -187,7 +189,7 @@ content:
     type: string
     region: content
   field_ucb_org_related_org:
-    weight: 120
+    weight: 19
     label: hidden
     settings:
       link: true
@@ -195,7 +197,7 @@ content:
     type: entity_reference_label
     region: content
   field_ucb_org_social_contact:
-    weight: 113
+    weight: 13
     label: hidden
     settings:
       trim_length: 80
@@ -207,7 +209,7 @@ content:
     type: link
     region: content
   field_ucb_org_street_address:
-    weight: 108
+    weight: 8
     label: hidden
     settings:
       link_to_entity: false
@@ -215,7 +217,7 @@ content:
     type: string
     region: content
   field_ucb_org_telephone:
-    weight: 114
+    weight: 14
     label: hidden
     settings:
       title: ''
@@ -223,21 +225,14 @@ content:
     type: telephone_link
     region: content
   field_ucb_org_type:
-    weight: 118
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_ucb_org_visibility:
-    weight: 123
+    weight: 18
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_ucb_org_website_url:
-    weight: 115
+    weight: 15
     label: hidden
     settings:
       trim_length: 80
@@ -249,8 +244,10 @@ content:
     type: link
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_ucb_org_parent_org: true
+  field_ucb_org_visibility: true
