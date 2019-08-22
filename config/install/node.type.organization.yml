@@ -10,7 +10,7 @@ third_party_settings:
     parent: 'main:'
 name: Organization
 type: organization
-description: 'Content to describe an organization (department, area, etc...) at CU Boulder.  '
+description: 'Content type for displaying information about a department, unit or area at CU Boulder.  '
 help: ''
 new_revision: true
 preview_mode: 1

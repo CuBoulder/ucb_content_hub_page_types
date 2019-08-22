@@ -6,10 +6,8 @@ dependencies:
 id: node.field_ucb_org_address_locality
 field_name: field_ucb_org_address_locality
 entity_type: node
-type: string
+type: string_long
 settings:
-  max_length: 255
-  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

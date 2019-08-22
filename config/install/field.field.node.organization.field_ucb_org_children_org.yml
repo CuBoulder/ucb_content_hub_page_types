@@ -9,7 +9,7 @@ field_name: field_ucb_org_children_org
 entity_type: node
 bundle: organization
 label: Sub-Organizations
-description: 'Any children or sub-divisions of this organization.  '
+description: 'Any children or sub-divisions of this organization.  These will be displayed in the order listed here.  '
 required: false
 translatable: false
 default_value: {  }

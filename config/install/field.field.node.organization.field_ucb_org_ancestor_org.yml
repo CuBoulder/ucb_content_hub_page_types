@@ -9,7 +9,7 @@ field_name: field_ucb_org_ancestor_org
 entity_type: node
 bundle: organization
 label: 'Ancestor Organization'
-description: ''
+description: 'An important organization that is not directly a parent organization.  Use this to specify an important relationship to this organization that is more than one level above this organization.  '
 required: false
 translatable: false
 default_value: {  }

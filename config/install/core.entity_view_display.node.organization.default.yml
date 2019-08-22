@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.organization.field_ucb_org_abbreviation
+    - field.field.node.organization.field_ucb_org_access
     - field.field.node.organization.field_ucb_org_additional_contact
     - field.field.node.organization.field_ucb_org_additional_links
     - field.field.node.organization.field_ucb_org_address_country
@@ -11,6 +12,7 @@ dependencies:
     - field.field.node.organization.field_ucb_org_ancestor_org
     - field.field.node.organization.field_ucb_org_campus_mail_box
     - field.field.node.organization.field_ucb_org_children_org
+    - field.field.node.organization.field_ucb_org_contact_form
     - field.field.node.organization.field_ucb_org_contact_form_url
     - field.field.node.organization.field_ucb_org_description
     - field.field.node.organization.field_ucb_org_directory_url
@@ -249,5 +251,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_ucb_org_access: true
+  field_ucb_org_contact_form: true
   field_ucb_org_parent_org: true
   field_ucb_org_visibility: true
