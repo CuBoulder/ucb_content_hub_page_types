@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: how_to_step
+label: 'How To Step'
+icon_uuid: null
+description: 'A discrete step meant to be part of a larger how-to document.  '
+behavior_plugins: {  }

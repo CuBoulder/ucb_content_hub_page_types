@@ -6,13 +6,17 @@ dependencies:
   - entity_reference_revisions
   - field
   - field_group
+  - file
+  - image
   - link
   - menu_ui
   - node
   - options
   - paragraphs
   - path
+  - pathauto
+  - taxonomy
   - telephone
   - text
   - user
-version: 8.x-0.1-alpha-20190822
+version: 8.x-0.1-alpha-20190828

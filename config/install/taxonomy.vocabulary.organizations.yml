@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Organizations
+vid: organizations
+description: 'CU Boulder Organizations'
+weight: 0

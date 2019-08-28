@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_howto_organization
+    - node.type.how_to
+    - node.type.organization
+id: node.how_to.field_ucb_howto_organization
+field_name: field_ucb_howto_organization
+entity_type: node
+bundle: how_to
+label: Organization
+description: 'Which organizational unit is responsible for the function/task associated with this how to document?  Think about who would the user contact if they need additional help completing the task associated.  '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      organization: organization
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

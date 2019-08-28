@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.how_to_step.field_ucb_howto_step_image
+    - field.field.paragraph.how_to_step.field_ucb_howto_step_instruction
+    - field.field.paragraph.how_to_step.field_ucb_howto_step_title
+    - paragraphs.paragraphs_type.how_to_step
+  module:
+    - image
+    - text
+id: paragraph.how_to_step.default
+targetEntityType: paragraph
+bundle: how_to_step
+mode: default
+content:
+  field_ucb_howto_step_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_ucb_howto_step_instruction:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_ucb_howto_step_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

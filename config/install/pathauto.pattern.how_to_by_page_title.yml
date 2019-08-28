@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: how_to_by_page_title
+label: 'How To by Page Title'
+type: 'canonical_entities:node'
+pattern: '/how-to/[node:title]'
+selection_criteria:
+  06a12190-b263-4ef2-8473-f3e21331a81c:
+    id: node_type
+    bundles:
+      how_to: how_to
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 06a12190-b263-4ef2-8473-f3e21331a81c
+selection_logic: and
+weight: -5
+relationships: {  }
