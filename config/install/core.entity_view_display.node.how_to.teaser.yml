@@ -4,26 +4,44 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.how_to.body
+    - field.field.node.how_to.field_ucb_howto_additional_info
+    - field.field.node.how_to.field_ucb_howto_audience
+    - field.field.node.how_to.field_ucb_howto_icon
+    - field.field.node.how_to.field_ucb_howto_organization
+    - field.field.node.how_to.field_ucb_howto_steps
+    - field.field.node.how_to.field_ucb_howto_tags
     - node.type.how_to
   module:
-    - text
     - user
 id: node.how_to.teaser
 targetEntityType: node
 bundle: how_to
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
+  field_ucb_howto_audience:
+    type: entity_reference_label
+    weight: 2
     region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_ucb_howto_icon:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  body: true
+  field_ucb_howto_additional_info: true
+  field_ucb_howto_organization: true
+  field_ucb_howto_steps: true
+  field_ucb_howto_tags: true

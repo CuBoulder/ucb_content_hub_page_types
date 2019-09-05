@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ucb_guide_row.field_ucb_guide_row_body
+    - field.field.paragraph.ucb_guide_row.field_ucb_guide_row_link_title
+    - field.field.paragraph.ucb_guide_row.field_ucb_guide_row_links
+    - field.field.paragraph.ucb_guide_row.field_ucb_guide_row_title
+    - paragraphs.paragraphs_type.ucb_guide_row
+  module:
+    - link
+    - text
+id: paragraph.ucb_guide_row.default
+targetEntityType: paragraph
+bundle: ucb_guide_row
+mode: default
+content:
+  field_ucb_guide_row_body:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_ucb_guide_row_link_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ucb_guide_row_links:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_ucb_guide_row_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

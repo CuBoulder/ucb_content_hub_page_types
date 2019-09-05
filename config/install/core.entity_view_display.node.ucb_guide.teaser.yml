@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ucb_guide.field_ucb_guide_content_row
+    - node.type.ucb_guide
+  module:
+    - user
+id: node.ucb_guide.teaser
+targetEntityType: node
+bundle: ucb_guide
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ucb_guide_content_row: true

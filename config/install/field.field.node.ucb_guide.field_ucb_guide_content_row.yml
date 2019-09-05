@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_guide_content_row
+    - node.type.ucb_guide
+    - paragraphs.paragraphs_type.ucb_guide_row
+  module:
+    - entity_reference_revisions
+id: node.ucb_guide.field_ucb_guide_content_row
+field_name: field_ucb_guide_content_row
+entity_type: node
+bundle: ucb_guide
+label: 'Content Row'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      ucb_guide_row: ucb_guide_row
+    target_bundles_drag_drop:
+      how_to_step:
+        weight: 7
+        enabled: false
+      ucb_contact_email:
+        weight: 8
+        enabled: false
+      ucb_contact_fax:
+        weight: 9
+        enabled: false
+      ucb_contact_telephone:
+        weight: 10
+        enabled: false
+      ucb_contact_url:
+        weight: 11
+        enabled: false
+      ucb_guide_row:
+        enabled: true
+        weight: 12
+field_type: entity_reference_revisions

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ucb_guide_row
+label: 'Guide Row'
+icon_uuid: null
+description: 'A row of content to be displayed on a Guide Page.  '
+behavior_plugins: {  }

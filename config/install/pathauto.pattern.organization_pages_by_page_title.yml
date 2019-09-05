@@ -3,19 +3,19 @@ status: true
 dependencies:
   module:
     - node
-id: how_to_by_page_title
-label: 'How To by Page Title and Organization'
+id: organization_pages_by_page_title
+label: 'Organization Pages by Page Title'
 type: 'canonical_entities:node'
-pattern: '/[node:field_ucb_howto_organization]/how-to/[node:title]'
+pattern: '/[node:title]'
 selection_criteria:
-  491e1738-955b-4e88-9a38-8c3f670198f0:
+  037b34ff-a9f0-4fa8-96a1-b0a4d7a8f5e8:
     id: node_type
     bundles:
-      how_to: how_to
+      organization: organization
     negate: false
     context_mapping:
       node: node
-    uuid: 491e1738-955b-4e88-9a38-8c3f670198f0
+    uuid: 037b34ff-a9f0-4fa8-96a1-b0a4d7a8f5e8
 selection_logic: and
 weight: -5
 relationships: {  }

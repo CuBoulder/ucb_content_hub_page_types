@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_guide_audience
+    - node.type.ucb_guide
+    - taxonomy.vocabulary.ucb_taxonomy_audience
+id: node.ucb_guide.field_ucb_guide_audience
+field_name: field_ucb_guide_audience
+entity_type: node
+bundle: ucb_guide
+label: Audience
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ucb_taxonomy_audience: ucb_taxonomy_audience
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'How To Tags'
+vid: ucb_how_to_tags
+description: 'Tags for the How To page type. '
+weight: 0

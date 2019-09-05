@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_howto_tags
+    - node.type.how_to
+    - taxonomy.vocabulary.ucb_how_to_tags
+id: node.how_to.field_ucb_howto_tags
+field_name: field_ucb_howto_tags
+entity_type: node
+bundle: how_to
+label: Tags
+description: 'Any appropriate terms that might help users find this information via a search.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ucb_how_to_tags: ucb_how_to_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

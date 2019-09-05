@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_howto_icon
+    - node.type.how_to
+id: node.how_to.field_ucb_howto_icon
+field_name: field_ucb_howto_icon
+entity_type: node
+bundle: how_to
+label: Icon
+description: 'A FontAwesome code (e.g. fal fa-rocket) for an icon that will be displayed along with the link to this content on other page types (e.g. when this How To is included on a Guide).  '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

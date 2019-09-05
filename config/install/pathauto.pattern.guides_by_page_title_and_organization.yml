@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: guides_by_page_title_and_organization
+label: 'Guides by Page Title and Organization'
+type: 'canonical_entities:node'
+pattern: '/[node:field_ucb_guide_organization]/guides/[node:title]'
+selection_criteria:
+  9eac2c5f-048f-4727-9d5f-6e4f7b7e6cde:
+    id: node_type
+    bundles:
+      ucb_guide: ucb_guide
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9eac2c5f-048f-4727-9d5f-6e4f7b7e6cde
+selection_logic: and
+weight: -5
+relationships: {  }

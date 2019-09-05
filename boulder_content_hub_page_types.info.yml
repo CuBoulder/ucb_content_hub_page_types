@@ -3,6 +3,7 @@ description: 'Custom page schemas for use with CU Boulder D8 Content Hub.  '
 type: module
 core: 8.x
 dependencies:
+  - comment
   - entity_reference_revisions
   - field
   - field_group
@@ -15,8 +16,10 @@ dependencies:
   - paragraphs
   - path
   - pathauto
+  - rdf
   - taxonomy
   - telephone
   - text
   - user
-version: 8.x-0.1-alpha-20190828
+version: 8.x-0.1-alpha-20190905
+core_incompatible: false

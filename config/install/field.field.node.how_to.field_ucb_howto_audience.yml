@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_howto_audience
+    - node.type.how_to
+    - taxonomy.vocabulary.ucb_taxonomy_audience
+id: node.how_to.field_ucb_howto_audience
+field_name: field_ucb_howto_audience
+entity_type: node
+bundle: how_to
+label: Audience
+description: 'To which groups is this How To relevant?  '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ucb_taxonomy_audience: ucb_taxonomy_audience
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ucb_taxonomy_audience
+field_type: entity_reference

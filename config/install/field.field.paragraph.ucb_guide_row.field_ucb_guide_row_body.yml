@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ucb_guide_row_body
+    - paragraphs.paragraphs_type.ucb_guide_row
+  module:
+    - text
+id: paragraph.ucb_guide_row.field_ucb_guide_row_body
+field_name: field_ucb_guide_row_body
+entity_type: paragraph
+bundle: ucb_guide_row
+label: Body
+description: 'Additional content to be displayed on this row.  '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
