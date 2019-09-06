@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.node.field_ucb_guide_tags
     - node.type.ucb_guide
-    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.ucb_how_to_tags
 id: node.ucb_guide.field_ucb_guide_tags
 field_name: field_ucb_guide_tags
 entity_type: node
@@ -19,10 +19,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      ucb_how_to_tags: ucb_how_to_tags
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: ucb_how_to_tags
 field_type: entity_reference
