@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.ucb_guide.field_ucb_guide_body
     - field.field.node.ucb_guide.field_ucb_guide_content_row
     - field.field.node.ucb_guide.field_ucb_guide_howtos
+    - field.field.node.ucb_guide.field_ucb_guide_icon
     - field.field.node.ucb_guide.field_ucb_guide_organization
     - field.field.node.ucb_guide.field_ucb_guide_tags
     - node.type.ucb_guide
@@ -35,6 +36,7 @@ third_party_settings:
         - field_ucb_guide_audience
         - field_ucb_guide_howtos
         - field_ucb_guide_tags
+        - field_ucb_guide_icon
       parent_name: group_guide_tabs
       weight: 20
       format_type: tab
@@ -106,6 +108,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_ucb_guide_icon:
+    weight: 15
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_ucb_guide_organization:
     weight: 11

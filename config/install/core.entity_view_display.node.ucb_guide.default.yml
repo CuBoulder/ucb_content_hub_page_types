@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.ucb_guide.field_ucb_guide_body
     - field.field.node.ucb_guide.field_ucb_guide_content_row
     - field.field.node.ucb_guide.field_ucb_guide_howtos
+    - field.field.node.ucb_guide.field_ucb_guide_icon
     - field.field.node.ucb_guide.field_ucb_guide_organization
     - field.field.node.ucb_guide.field_ucb_guide_tags
     - node.type.ucb_guide
@@ -50,6 +51,14 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
+    region: content
+  field_ucb_guide_icon:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_ucb_guide_organization:
     weight: 4

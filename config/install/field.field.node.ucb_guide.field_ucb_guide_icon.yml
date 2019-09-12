@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_guide_icon
+    - node.type.ucb_guide
+id: node.ucb_guide.field_ucb_guide_icon
+field_name: field_ucb_guide_icon
+entity_type: node
+bundle: ucb_guide
+label: Icon
+description: 'Any valid FontAwesome icon code (e.g. fal fa-rocket).  The icon is displayed when the guide is pulled in on other pages as a link. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

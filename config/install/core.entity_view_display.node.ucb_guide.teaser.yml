@@ -3,7 +3,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.ucb_guide.field_ucb_guide_audience
+    - field.field.node.ucb_guide.field_ucb_guide_body
     - field.field.node.ucb_guide.field_ucb_guide_content_row
+    - field.field.node.ucb_guide.field_ucb_guide_howtos
+    - field.field.node.ucb_guide.field_ucb_guide_icon
+    - field.field.node.ucb_guide.field_ucb_guide_organization
+    - field.field.node.ucb_guide.field_ucb_guide_tags
     - node.type.ucb_guide
   module:
     - user
@@ -12,10 +18,23 @@ targetEntityType: node
 bundle: ucb_guide
 mode: teaser
 content:
+  field_ucb_guide_icon:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  field_ucb_guide_audience: true
+  field_ucb_guide_body: true
   field_ucb_guide_content_row: true
+  field_ucb_guide_howtos: true
+  field_ucb_guide_organization: true
+  field_ucb_guide_tags: true
