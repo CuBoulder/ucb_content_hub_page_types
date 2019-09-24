@@ -9,8 +9,8 @@ field_name: field_ucb_org_abbreviation
 entity_type: node
 bundle: organization
 label: Abbreviation
-description: 'Abbreviation code for this organization.  '
-required: false
+description: 'Abbreviation code for this organization.  Note this will also be used to construct the URL for this content.  '
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

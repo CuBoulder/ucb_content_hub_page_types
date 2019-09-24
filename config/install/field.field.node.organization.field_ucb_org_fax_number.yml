@@ -11,7 +11,7 @@ field_name: field_ucb_org_fax_number
 entity_type: node
 bundle: organization
 label: 'Fax Number'
-description: ''
+description: 'Optional fax number for the organization.  '
 required: false
 translatable: false
 default_value: {  }

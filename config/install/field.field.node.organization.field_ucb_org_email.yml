@@ -9,7 +9,7 @@ field_name: field_ucb_org_email
 entity_type: node
 bundle: organization
 label: Email
-description: ''
+description: 'Main contact email address for this organization.  Note that you can add additional important email addresses with the Additional Contacts field.  '
 required: false
 translatable: false
 default_value: {  }

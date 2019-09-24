@@ -9,7 +9,7 @@ field_name: field_ucb_org_address_locality
 entity_type: node
 bundle: organization
 label: 'Address Locality'
-description: Boulder
+description: 'Address locality -- normally the city or town for the address (e.g. Boulder) '
 required: false
 translatable: false
 default_value: {  }

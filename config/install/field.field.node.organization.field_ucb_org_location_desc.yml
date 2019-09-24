@@ -9,7 +9,7 @@ field_name: field_ucb_org_location_desc
 entity_type: node
 bundle: organization
 label: 'Location Description'
-description: 'Second door on the left after you exit the elevators'
+description: 'Additional information about how to find the physical location for this organization for people visiting in-person (e.g. take the fist left out of the elevators on the 5th floor).  '
 required: false
 translatable: false
 default_value: {  }

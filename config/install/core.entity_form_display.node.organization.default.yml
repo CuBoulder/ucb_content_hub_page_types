@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.organization.field_ucb_org_ancestor_org
     - field.field.node.organization.field_ucb_org_campus_mail_box
     - field.field.node.organization.field_ucb_org_children_org
-    - field.field.node.organization.field_ucb_org_contact_form
     - field.field.node.organization.field_ucb_org_contact_form_url
     - field.field.node.organization.field_ucb_org_description
     - field.field.node.organization.field_ucb_org_directory_url
@@ -20,14 +19,12 @@ dependencies:
     - field.field.node.organization.field_ucb_org_fax_number
     - field.field.node.organization.field_ucb_org_id_campus_map
     - field.field.node.organization.field_ucb_org_location_desc
-    - field.field.node.organization.field_ucb_org_parent_org
     - field.field.node.organization.field_ucb_org_postal_code
     - field.field.node.organization.field_ucb_org_related_org
     - field.field.node.organization.field_ucb_org_social_contact
     - field.field.node.organization.field_ucb_org_street_address
     - field.field.node.organization.field_ucb_org_telephone
     - field.field.node.organization.field_ucb_org_type
-    - field.field.node.organization.field_ucb_org_visibility
     - field.field.node.organization.field_ucb_org_website_url
     - node.type.organization
   module:
@@ -83,11 +80,11 @@ third_party_settings:
       weight: 25
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
-        description: ''
+        description: "<ul>\r\n<li><strong>Ancestor</strong> : Important hierarchical organizations that are more than one level above this organization. </li>\r\n<li><strong>Parent</strong> : The organizational unit directly above this one (note this will be automatically inferred based on Sub-Units (children). </li>\r\n<li><strong>Related</strong> : Any important organizations at the same level as this organizations.  For example if there is a partnership between two or more distinct sister organizations that need to be denoted, use this relationship.</li>\r\n<li><strong>Sub-Units (Children)</strong> : Any organizational units which report or comprise a sub-unit of this organization.  These will be displayed on the organization page as sub units in the order they are listed here. </li>\r\n</ul>"
         formatter: closed
         required_fields: true
+        id: ''
+        classes: ''
       label: Relations
       region: content
     group_org_tab_address:
@@ -387,6 +384,3 @@ content:
     third_party_settings: {  }
 hidden:
   field_ucb_org_access: true
-  field_ucb_org_contact_form: true
-  field_ucb_org_parent_org: true
-  field_ucb_org_visibility: true

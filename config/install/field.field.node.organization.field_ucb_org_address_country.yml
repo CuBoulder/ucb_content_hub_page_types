@@ -9,7 +9,7 @@ field_name: field_ucb_org_address_country
 entity_type: node
 bundle: organization
 label: 'Address Country'
-description: ''
+description: 'Optional Country Code for the address (e.g. USA) '
 required: false
 translatable: false
 default_value: {  }

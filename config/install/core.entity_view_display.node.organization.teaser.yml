@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.organization.field_ucb_org_ancestor_org
     - field.field.node.organization.field_ucb_org_campus_mail_box
     - field.field.node.organization.field_ucb_org_children_org
-    - field.field.node.organization.field_ucb_org_contact_form
     - field.field.node.organization.field_ucb_org_contact_form_url
     - field.field.node.organization.field_ucb_org_description
     - field.field.node.organization.field_ucb_org_directory_url
@@ -21,14 +20,12 @@ dependencies:
     - field.field.node.organization.field_ucb_org_fax_number
     - field.field.node.organization.field_ucb_org_id_campus_map
     - field.field.node.organization.field_ucb_org_location_desc
-    - field.field.node.organization.field_ucb_org_parent_org
     - field.field.node.organization.field_ucb_org_postal_code
     - field.field.node.organization.field_ucb_org_related_org
     - field.field.node.organization.field_ucb_org_social_contact
     - field.field.node.organization.field_ucb_org_street_address
     - field.field.node.organization.field_ucb_org_telephone
     - field.field.node.organization.field_ucb_org_type
-    - field.field.node.organization.field_ucb_org_visibility
     - field.field.node.organization.field_ucb_org_website_url
     - node.type.organization
   module:
@@ -78,18 +75,15 @@ hidden:
   field_ucb_org_ancestor_org: true
   field_ucb_org_campus_mail_box: true
   field_ucb_org_children_org: true
-  field_ucb_org_contact_form: true
   field_ucb_org_contact_form_url: true
   field_ucb_org_description: true
   field_ucb_org_directory_url: true
   field_ucb_org_fax_number: true
   field_ucb_org_id_campus_map: true
   field_ucb_org_location_desc: true
-  field_ucb_org_parent_org: true
   field_ucb_org_postal_code: true
   field_ucb_org_related_org: true
   field_ucb_org_social_contact: true
   field_ucb_org_street_address: true
   field_ucb_org_type: true
-  field_ucb_org_visibility: true
   links: true

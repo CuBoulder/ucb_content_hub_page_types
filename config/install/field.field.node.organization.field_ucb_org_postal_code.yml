@@ -9,7 +9,7 @@ field_name: field_ucb_org_postal_code
 entity_type: node
 bundle: organization
 label: 'Postal Code'
-description: ''
+description: 'Postal or Zip code for the mailing address (e.g. 80309) '
 required: false
 translatable: false
 default_value: {  }

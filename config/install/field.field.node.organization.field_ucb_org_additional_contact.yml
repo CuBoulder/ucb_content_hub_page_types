@@ -15,7 +15,7 @@ field_name: field_ucb_org_additional_contact
 entity_type: node
 bundle: organization
 label: 'Additional Contact Points'
-description: 'Optional additional Email, Phone, Fax or URLs contact points.  '
+description: 'Optional additional Email, Phone, Fax or URLs contact points for this organization.  '
 required: false
 translatable: false
 default_value: {  }
@@ -42,4 +42,10 @@ settings:
       ucb_contact_fax:
         enabled: true
         weight: -6
+      how_to_step:
+        weight: 7
+        enabled: false
+      ucb_guide_row:
+        weight: 12
+        enabled: false
 field_type: entity_reference_revisions

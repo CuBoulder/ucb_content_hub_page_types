@@ -9,7 +9,7 @@ field_name: field_ucb_org_id_campus_map
 entity_type: node
 bundle: organization
 label: 'Campus Map ID'
-description: ''
+description: 'ID Code from the official CU Boulder campus map website <a href=https://www.colorado.edu/map/ target=_new>https://www.colorado.edu/map/</a>'
 required: false
 translatable: false
 default_value: {  }

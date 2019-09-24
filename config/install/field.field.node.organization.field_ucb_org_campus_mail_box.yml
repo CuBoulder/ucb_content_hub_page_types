@@ -9,7 +9,7 @@ field_name: field_ucb_org_campus_mail_box
 entity_type: node
 bundle: organization
 label: 'Campus Mail Box'
-description: ''
+description: 'Address code for on-campus mailings.  '
 required: false
 translatable: false
 default_value: {  }

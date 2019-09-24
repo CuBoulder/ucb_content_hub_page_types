@@ -11,7 +11,7 @@ field_name: field_ucb_org_telephone
 entity_type: node
 bundle: organization
 label: Telephone
-description: ''
+description: 'Main phone number for this organization.  Note that additional phone numbers can be added with the Additional Contact Points field.  '
 required: false
 translatable: false
 default_value: {  }

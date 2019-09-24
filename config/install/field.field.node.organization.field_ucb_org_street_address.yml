@@ -9,7 +9,7 @@ field_name: field_ucb_org_street_address
 entity_type: node
 bundle: organization
 label: 'Street Address'
-description: '123 Main St, Suite 200'
+description: 'Mailing address main street address (e.g. 123 Main St, Suite 200)'
 required: false
 translatable: false
 default_value: {  }
