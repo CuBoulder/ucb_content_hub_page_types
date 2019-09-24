@@ -10,7 +10,7 @@ field_name: field_ucb_guide_audience
 entity_type: node
 bundle: ucb_guide
 label: Audience
-description: ''
+description: 'Primary target audiences for this Guide.  '
 required: false
 translatable: false
 default_value: {  }

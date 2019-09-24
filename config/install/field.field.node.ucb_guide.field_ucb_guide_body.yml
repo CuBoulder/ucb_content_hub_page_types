@@ -11,7 +11,7 @@ field_name: field_ucb_guide_body
 entity_type: node
 bundle: ucb_guide
 label: Body
-description: ''
+description: 'Any content to be displayed along with this guide used to provide additional context.  '
 required: false
 translatable: false
 default_value: {  }

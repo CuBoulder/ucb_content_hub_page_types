@@ -12,7 +12,7 @@ field_name: field_ucb_howto_steps
 entity_type: node
 bundle: how_to
 label: Steps
-description: ''
+description: 'Ordinal listing of discrete tasks needed to complete this How To objective.  '
 required: true
 translatable: false
 default_value: {  }
@@ -38,5 +38,8 @@ settings:
         enabled: false
       ucb_contact_url:
         weight: 10
+        enabled: false
+      ucb_guide_row:
+        weight: 12
         enabled: false
 field_type: entity_reference_revisions

@@ -12,7 +12,7 @@ field_name: field_ucb_guide_content_row
 entity_type: node
 bundle: ucb_guide
 label: 'Content Row'
-description: ''
+description: 'Additional collection of information and links to that are appropriate for this Guide.  '
 required: false
 translatable: false
 default_value: {  }

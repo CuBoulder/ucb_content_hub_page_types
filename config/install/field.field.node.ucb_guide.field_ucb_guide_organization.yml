@@ -10,7 +10,7 @@ field_name: field_ucb_guide_organization
 entity_type: node
 bundle: ucb_guide
 label: Organization
-description: ''
+description: 'Which organization is responsible for this content.  '
 required: true
 translatable: false
 default_value: {  }

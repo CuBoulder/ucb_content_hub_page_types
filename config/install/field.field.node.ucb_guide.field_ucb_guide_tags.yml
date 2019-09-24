@@ -10,7 +10,7 @@ field_name: field_ucb_guide_tags
 entity_type: node
 bundle: ucb_guide
 label: Tags
-description: ''
+description: 'Any terms that are appropriate for this content, this will likely be used to help find this content via searching.  '
 required: false
 translatable: false
 default_value: {  }
