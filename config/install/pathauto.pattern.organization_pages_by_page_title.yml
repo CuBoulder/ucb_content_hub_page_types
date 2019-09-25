@@ -4,18 +4,18 @@ dependencies:
   module:
     - node
 id: organization_pages_by_page_title
-label: 'Organization Pages by Page Title'
+label: 'Organization Pages by Page Abbreviation'
 type: 'canonical_entities:node'
-pattern: '/[node:title]'
+pattern: '/org/[node:field_ucb_org_abbreviation:value]'
 selection_criteria:
-  037b34ff-a9f0-4fa8-96a1-b0a4d7a8f5e8:
+  7ec1c44f-5423-4100-9840-39d23cbfb568:
     id: node_type
     bundles:
       organization: organization
     negate: false
     context_mapping:
       node: node
-    uuid: 037b34ff-a9f0-4fa8-96a1-b0a4d7a8f5e8
+    uuid: 7ec1c44f-5423-4100-9840-39d23cbfb568
 selection_logic: and
 weight: -5
 relationships: {  }
