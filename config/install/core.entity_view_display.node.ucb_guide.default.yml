@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_guide.field_ucb_guide_access_control
     - field.field.node.ucb_guide.field_ucb_guide_audience
     - field.field.node.ucb_guide.field_ucb_guide_body
     - field.field.node.ucb_guide.field_ucb_guide_content_row
@@ -19,6 +20,13 @@ targetEntityType: node
 bundle: ucb_guide
 mode: default
 content:
+  field_ucb_guide_access_control:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_entity_id
+    region: content
   field_ucb_guide_audience:
     weight: 3
     label: hidden

@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.how_to.body
+    - field.field.node.how_to.field_ucb_howto_access_control
     - field.field.node.how_to.field_ucb_howto_additional_info
     - field.field.node.how_to.field_ucb_howto_audience
     - field.field.node.how_to.field_ucb_howto_icon
@@ -33,6 +34,7 @@ third_party_settings:
     group_ucb_howto_details:
       children:
         - field_ucb_howto_organization
+        - field_ucb_howto_access_control
         - field_ucb_howto_icon
         - field_ucb_howto_audience
         - body
@@ -70,7 +72,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 12
+    weight: 13
     settings:
       rows: 9
       summary_rows: 3
@@ -83,8 +85,17 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_ucb_howto_access_control:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_ucb_howto_additional_info:
-    weight: 13
+    weight: 14
     settings:
       rows: 5
       placeholder: ''
@@ -92,13 +103,13 @@ content:
     type: text_textarea
     region: content
   field_ucb_howto_audience:
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_ucb_howto_icon:
-    weight: 10
+    weight: 11
     settings:
       size: 60
       placeholder: ''
@@ -127,7 +138,7 @@ content:
     third_party_settings: {  }
     region: content
   field_ucb_howto_tags:
-    weight: 14
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60

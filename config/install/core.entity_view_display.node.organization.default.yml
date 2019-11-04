@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.organization.field_ucb_org_abbreviation
-    - field.field.node.organization.field_ucb_org_access
+    - field.field.node.organization.field_ucb_org_access_control
     - field.field.node.organization.field_ucb_org_additional_contact
     - field.field.node.organization.field_ucb_org_additional_links
     - field.field.node.organization.field_ucb_org_address_country
@@ -47,6 +47,13 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_ucb_org_access_control:
+    type: entity_reference_entity_id
+    weight: 24
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_ucb_org_additional_contact:
     type: entity_reference_revisions_entity_view
     weight: 22
@@ -247,5 +254,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_ucb_org_access: true
+hidden: {  }

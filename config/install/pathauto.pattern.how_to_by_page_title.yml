@@ -6,16 +6,16 @@ dependencies:
 id: how_to_by_page_title
 label: 'How To by Page Title and Organization'
 type: 'canonical_entities:node'
-pattern: '/[node:field_ucb_howto_organization]/how-to/[node:title]'
+pattern: '/how-to/[node:field_ucb_howto_organization:entity:field_ucb_org_abbreviation]/[node:title]'
 selection_criteria:
-  491e1738-955b-4e88-9a38-8c3f670198f0:
+  0f98a148-da88-44c1-8fe8-85a6d26a4e45:
     id: node_type
     bundles:
       how_to: how_to
     negate: false
     context_mapping:
       node: node
-    uuid: 491e1738-955b-4e88-9a38-8c3f670198f0
+    uuid: 0f98a148-da88-44c1-8fe8-85a6d26a4e45
 selection_logic: and
 weight: -5
 relationships: {  }

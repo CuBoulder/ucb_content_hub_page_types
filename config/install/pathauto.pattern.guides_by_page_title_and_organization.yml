@@ -6,16 +6,16 @@ dependencies:
 id: guides_by_page_title_and_organization
 label: 'Guides by Page Title and Organization'
 type: 'canonical_entities:node'
-pattern: '/[node:field_ucb_guide_organization]/guides/[node:title]'
+pattern: '/guide/[node:field_ucb_guide_organization:entity:field_ucb_org_abbreviation]/[node:title]'
 selection_criteria:
-  9eac2c5f-048f-4727-9d5f-6e4f7b7e6cde:
+  3722c18a-57cf-4742-9ccc-0cbd4c8ecd39:
     id: node_type
     bundles:
       ucb_guide: ucb_guide
     negate: false
     context_mapping:
       node: node
-    uuid: 9eac2c5f-048f-4727-9d5f-6e4f7b7e6cde
+    uuid: 3722c18a-57cf-4742-9ccc-0cbd4c8ecd39
 selection_logic: and
 weight: -5
 relationships: {  }

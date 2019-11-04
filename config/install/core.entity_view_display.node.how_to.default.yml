@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.how_to.body
+    - field.field.node.how_to.field_ucb_howto_access_control
     - field.field.node.how_to.field_ucb_howto_additional_info
     - field.field.node.how_to.field_ucb_howto_audience
     - field.field.node.how_to.field_ucb_howto_icon
@@ -25,6 +26,13 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_ucb_howto_access_control:
+    weight: 108
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_entity_id
     region: content
   field_ucb_howto_additional_info:
     weight: 103

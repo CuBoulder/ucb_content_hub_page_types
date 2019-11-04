@@ -21,5 +21,6 @@ dependencies:
   - telephone
   - text
   - user
-version: 8.x-0.1-alpha-20190925
+  - views
+version: 8.x-0.1-alpha-20191104
 core_incompatible: false

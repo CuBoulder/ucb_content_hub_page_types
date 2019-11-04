@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Access Control'
+vid: ucb_access_control_taxonomy
+description: 'Taxonomy used to grant access to Content Hub content.  '
+weight: 0

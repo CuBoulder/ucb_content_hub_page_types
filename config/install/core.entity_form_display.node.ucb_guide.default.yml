@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.ucb_guide.field_ucb_guide_access_control
     - field.field.node.ucb_guide.field_ucb_guide_audience
     - field.field.node.ucb_guide.field_ucb_guide_body
     - field.field.node.ucb_guide.field_ucb_guide_content_row
@@ -33,6 +34,7 @@ third_party_settings:
     group_guide_details:
       children:
         - field_ucb_guide_organization
+        - field_ucb_guide_access_control
         - field_ucb_guide_audience
         - field_ucb_guide_howtos
         - field_ucb_guide_tags
@@ -74,8 +76,17 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_ucb_guide_audience:
+  field_ucb_guide_access_control:
     weight: 12
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_ucb_guide_audience:
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -101,7 +112,7 @@ content:
     third_party_settings: {  }
     region: content
   field_ucb_guide_howtos:
-    weight: 13
+    weight: 14
     settings:
       match_operator: CONTAINS
       size: 60
@@ -110,7 +121,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_ucb_guide_icon:
-    weight: 15
+    weight: 16
     settings:
       size: 60
       placeholder: ''
@@ -127,7 +138,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_ucb_guide_tags:
-    weight: 14
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60
