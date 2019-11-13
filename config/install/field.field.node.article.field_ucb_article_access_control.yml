@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ucb_article_access_control
+    - node.type.article
+    - taxonomy.vocabulary.ucb_access_control_taxonomy
+id: node.article.field_ucb_article_access_control
+field_name: field_ucb_article_access_control
+entity_type: node
+bundle: article
+label: 'Access Control'
+description: 'Defines which group owns this content and has permission to modify it.  '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ucb_access_control_taxonomy: ucb_access_control_taxonomy
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -41,6 +41,9 @@ settings:
       value: Institute
       label: Institute
     -
+      value: Division
+      label: Division
+    -
       value: 'Service Department'
       label: 'Service Department'
     -
@@ -62,11 +65,26 @@ settings:
       value: 'Research Program'
       label: 'Research Program'
     -
+      value: 'Research Department'
+      label: 'Research Department'
+    -
       value: Lab
       label: Lab
     -
       value: Faculty
       label: Faculty
+    -
+      value: Dean
+      label: Dean
+    -
+      value: 'Executive Vice Chancellor'
+      label: 'Executive Vice Chancellor'
+    -
+      value: 'Senior Vice Chancellor'
+      label: 'Senior Vice Chancellor'
+    -
+      value: Provost
+      label: Provost
     -
       value: 'Student Group'
       label: 'Student Group'
