@@ -23,5 +23,5 @@ dependencies:
   - text
   - user
   - views
-version: 8.x-0.1-alpha-20191112b
+version: 8.x-0.1-alpha-20191114
 core_incompatible: false

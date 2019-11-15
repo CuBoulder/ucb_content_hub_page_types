@@ -1,4 +1,30 @@
 excluded:
   - field.storage.node.field_tags
+  - field.storage.node.field_image
+  - field.storage.node.field_ucb_article_access_control
+  - field.storage.node.field_ucb_basic_access_control
   - rdf.mapping.taxonomy_term.tags
+  - rdf.mapping.node.article
+  - rdf.mapping.node.page
+  - node.type.article
+  - node.type.page
+  - block_content.type.basic
+  - core.entity_form_display.block_content.basic.default
+  - core.entity_form_display.node.article.default
+  - core.entity_form_display.node.page.default
+  - core.entity_view_display.block_content.basic.default
+  - core.entity_view_display.node.article.default
+  - core.entity_view_display.node.article.rss
+  - core.entity_view_display.node.article.teaser
+  - core.entity_view_display.node.page.default
+  - core.entity_view_display.node.page.teaser
+  - field.field.block_content.basic.body
+  - field.field.node.article.body
+  - field.field.node.article.comment
+  - field.field.node.article.field_image
+  - field.field.node.article.field_tags
+  - field.field.node.article.field_ucb_article_access_control
+  - field.field.node.page.body
+  - field.field.node.page.field_ucb_basic_access_control
+  - taxonomy.vocabulary.tags
 required: true
