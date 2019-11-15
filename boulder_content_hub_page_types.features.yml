@@ -27,4 +27,5 @@ excluded:
   - field.field.node.page.body
   - field.field.node.page.field_ucb_basic_access_control
   - taxonomy.vocabulary.tags
+  - core.base_field_override.node.page.promote
 required: true
