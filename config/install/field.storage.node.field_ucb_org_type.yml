@@ -44,6 +44,9 @@ settings:
       value: Division
       label: Division
     -
+      value: Program
+      label: Program
+    -
       value: 'Service Department'
       label: 'Service Department'
     -
